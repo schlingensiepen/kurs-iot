@@ -53,6 +53,44 @@ genauen Bedingungen stehen auf der Angebotsseite.
   tmux-Sitzungen bequem aus dem Windows Terminal
   verwalten (englischsprachig).
 
+### Lokale Umgebung für die Umsetzung
+
+clawbook-lehre nutzen Sie vor allem für die
+systematische Produktentwicklung. Programmiert und
+geflasht wird in einer zweiten, lokalen Umgebung: Das
+ESP32-Board hängt per USB an Ihrem Rechner, deshalb
+muss diese Umgebung nativ installiert sein.
+
+1. **VS Code als portable Version** einrichten
+   ([Anleitung](https://code.visualstudio.com/docs/setup/portable);
+   ZIP- bzw. tar.gz-Download, nicht der Installer).
+   So bleibt sie getrennt von clawbook-lehre und von
+   einem lokal installierten VS Code, und Sie können
+   sie mitnehmen – etwa auf einen Rechner im
+   i2cm-Labor.
+2. **PlatformIO IDE** in der portablen Version
+   installieren
+   ([Anleitung](https://docs.platformio.org/en/latest/integration/ide/vscode.html)).
+3. **GitHub Copilot** in der portablen Version
+   einrichten
+   ([Anleitung](https://code.visualstudio.com/docs/copilot/setup)) –
+   mit dem GitHub-Konto, für das Sie die
+   Studierendenversion beantragt haben.
+4. **USB-Treiber CH340:** unter Windows und macOS vom
+   Hersteller WCH
+   ([Windows](https://www.wch-ic.com/downloads/CH341SER_EXE.html),
+   [macOS](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html));
+   unter Linux ist der Treiber dabei, nötig sind die
+   [udev-Regeln von PlatformIO](https://docs.platformio.org/en/latest/core/installation/udev-rules.html).
+
+Alle Anleitungen sind englischsprachig. PlatformIO
+lädt seine Werkzeuge auf jedem Rechner beim ersten
+Projekt herunter; das dauert beim ersten Mal länger.
+
+Wie Sie Ihre Arbeit zwischen clawbook-lehre und der
+lokalen Umgebung austauschen, erklärt ein eigenes
+Tutorial, das noch folgt.
+
 ## Wintersemester 2026/27
 
 _Inhalte folgen wöchentlich._
